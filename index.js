@@ -1,4 +1,8 @@
-function divDeDivisor(number) {
+var output = "";
+
+var i;
+
+function tranDivdedivisor(number) {
     var result = "";
     if (number % 3 === 0) {
         result += "Foo";
@@ -14,7 +18,7 @@ function divDeDivisor(number) {
 
 }
 
-function conatDeNumeros(number) {
+function tranConatdenumeros(number) {
     var result = "";
     var j;
     number = number.toString().split("");
@@ -28,13 +32,23 @@ function conatDeNumeros(number) {
         }
     }
     return result;
-
 }
 
+function tran(number) {
+    var result = tranDivdedivisor(number) + tranConatdenumeros(number);
+    if (result === "") {
+        return number.toString();
+    } else {
+        return result;
+    }
+}
+//output ="number";
+//for (i=1; i<=100 ; i += 1){
+//output +i +tran(i);
+//}
 
 
-
-console.log(divDeDivisor(5));
-console.log(conatDeNumeros(5));
+console.log(tran(3));
+console.log(toString(50));
 
 
