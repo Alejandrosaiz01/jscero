@@ -1,7 +1,3 @@
-var output = "";
-
-var i;
-
 function tranDivdedivisor(number) {
     var result = "";
     if (number % 3 === 0) {
@@ -11,7 +7,7 @@ function tranDivdedivisor(number) {
         result += "Bar";
     }
     if (number % 7 === 0) {
-        result += "quix";
+        result += "Quix";
     }
     return result
 
@@ -41,14 +37,10 @@ function tran(number) {
     } else {
         return result;
     }
+
 }
-//output ="number";
-//for (i=1; i<=100 ; i += 1){
-//output +i +tran(i);
-//}
 
 
-console.log(tran(3));
-console.log(toString(50));
 
+console.log(tran(85))
 
